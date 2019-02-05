@@ -1,0 +1,15 @@
+{
+  "name": "tvmaze",
+  "version": "0.0.1",
+  "scripts": {
+    "compodoc": "compodoc -p tsconfig.lib.json",
+    "compodoc_threshold": "compodoc -p tsconfig.lib.json --coverageTest"
+  },
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+  },
+  "devDependencies": {
+    "@compodoc/compodoc": "^1.1.7"
+  }
+}

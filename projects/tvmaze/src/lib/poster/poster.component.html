@@ -1,0 +1,15 @@
+<div>
+
+  <ul>
+    <h4>Kilder:</h4>
+    <li><a href="https://medium.com/@tomsu/how-to-build-a-library-for-angular-apps-4f9b38b0ed11">how-to-build-a-library-for-angular-apps</a></li>
+    <li><a href="https://blog.angulartraining.com/create-your-own-libraries-with-angular-cli-7b434600bbb7">create-your-own-libraries-with-angular-cli</a></li>
+    <li><a href="https://www.softwarearchitekt.at/post/2018/04/17/seamlessly-updating-your-angular-libraries-with-ng-update.aspx">seamlessly-updating-your-angular-libraries-with-ng-update</a></li>
+  </ul>
+
+  <p>Fra lib:</p>
+  <h4>Brukere</h4>
+  <ul>
+    <li *ngFor="let user of users"><span [innerText]="user.first_name"></span>&nbsp;<img *ngIf="user.avatar" [src]="user.avatar"/></li>
+  </ul>
+</div>
