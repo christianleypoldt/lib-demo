@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TvmazeComponent } from './tvmaze.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -15,4 +15,11 @@ import { PosterComponent } from './poster/poster.component';
     PosterComponent
   ]
 })
-export class TvmazeModule { }
+export class TvmazeModule { 
+  static forRoot(): ModuleWithProviders {
+    return {
+      ngModule: TvmazeModule,
+      providers: [ ]
+    };
+  }
+}

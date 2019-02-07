@@ -1,6 +1,12 @@
 {
-  "name": "tvmaze",
-  "version": "0.0.1",
+  "name": "@leypoldt/lib-demo",
+  "version": "1.0.5",
+  "description": "Tester oppgradering av 3. party libraries",
+  "author": "Christian Leypoldt",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leypoldt/lib-demo.git"
+  },
   "scripts": {
     "compodoc": "compodoc -p tsconfig.lib.json",
     "compodoc_threshold": "compodoc -p tsconfig.lib.json --coverageTest"

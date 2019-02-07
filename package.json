@@ -1,6 +1,12 @@
 {
-  "name": "lib-demo",
-  "version": "0.0.0",
+  "name": "@leypoldt/lib-demo",
+  "version": "1.0.2",
+  "description": "Test oppgradering av 3. party libraries",
+  "author": "Christian Leypoldt",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leypoldt/lib-demo.git"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,7 +15,6 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^6.1.0",
     "@angular/cli": "^6.2.9",
