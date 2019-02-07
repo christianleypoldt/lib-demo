@@ -156,6 +156,41 @@
           }
         }
       }
+    },
+    "tvmaze-update": {
+      "root": "projects/tvmaze-update",
+      "sourceRoot": "projects/tvmaze-update/src",
+      "projectType": "library",
+      "prefix": "tvu",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/tvmaze-update/tsconfig.lib.json",
+            "project": "projects/tvmaze-update/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/tvmaze-update/src/test.ts",
+            "tsConfig": "projects/tvmaze-update/tsconfig.spec.json",
+            "karmaConfig": "projects/tvmaze-update/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/tvmaze-update/tsconfig.lib.json",
+              "projects/tvmaze-update/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "lib-demo"

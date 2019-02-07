@@ -24,6 +24,12 @@
       ],
       "tvmaze/*": [
         "dist/tvmaze/*"
+      ],
+      "tvmaze-update": [
+        "dist/tvmaze-update"
+      ],
+      "tvmaze-update/*": [
+        "dist/tvmaze-update/*"
       ]
     }
   }

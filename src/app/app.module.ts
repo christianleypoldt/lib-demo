@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { TvmazeModule } from 'tvmaze';
+import { TvmazeUpdateModule } from 'tvmaze-update';
 
 import { AppComponent } from './app.component';
 
@@ -11,7 +12,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    TvmazeModule
+    TvmazeModule,
+    TvmazeUpdateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
