@@ -1,8 +1,18 @@
 {
-  "name": "tvmaze-update",
-  "version": "0.0.1",
+  "name": "@leypoldt/lib-demo-update",
+  "version": "7.4.6",
+  "description": "Tester oppgradering av 3. party libraries",
+  "author": "Christian Leypoldt",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leypoldt/lib-demo.git"
+  },
+  "ng-update": {    
+    "migrations": "./migrations/migrations.json"   
+  },
   "peerDependencies": {
     "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
-    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0",
+    "underscore": "1.9.1"
   }
 }

@@ -1,0 +1,14 @@
+{
+    "schematics": {
+      "christians-migration-01": {
+        "description": "Upgrade to version 7",
+        "version": "6.0.0",
+        "factory": ".migrations/7_0_0/index"
+      },
+      "christians-migration-02": {
+        "description": "Upgrade to version 7.5",
+        "version": "7.0.0",
+        "factory": ".migrations/7_5_0/index"
+      }
+    }
+  }

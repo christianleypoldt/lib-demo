@@ -12,4 +12,6 @@
   <ul>
     <li *ngFor="let user of users"><span [innerText]="user.first_name"></span>&nbsp;<img *ngIf="user.avatar" [src]="user.avatar"/></li>
   </ul>
+
+  <p>3. party lib dependency: <span [innerText]="getValueFromThirdPartyLibDependency()"></span></p>
 </div>

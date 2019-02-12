@@ -7,13 +7,13 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
-	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+	      <link rel="stylesheet" href="./styles/style.css">
     </head>
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top visible-xs">
-            <a href="../" class="navbar-brand">@leypoldt/lib-demo documentation</a>
+            <a href="./" class="navbar-brand">@leypoldt/lib-demo documentation</a>
             <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
         </div>
 
@@ -27,16 +27,14 @@
                    <compodoc-menu mode="normal"></compodoc-menu>
                </div>
                <!-- START CONTENT -->
-               <div class="content module">
+               <div class="content overview">
                    <div class="content-data">
 
 
-
 <ol class="breadcrumb">
-    <li>Modules</li>
-    <li>TvmazeModule</li>
+    <li>Overview</li>
 </ol>
-
+  
 <div class="text-center module-graph-container">
     <div id="module-graph-svg">
         <?xml version="1.0" encoding="UTF-8" standalone="no"?>
@@ -138,139 +136,48 @@
         <button id="zoom-out" class="btn btn-default btn-sm">Zoom out</button>
     </div>
 </div>
-<script src="../js/libs/svg-pan-zoom.min.js"></script>
-<script src="../js/svg-pan-zoom.controls.js"></script>
-
-<ul class="nav nav-tabs" role="tablist">
-    <li  class="active" >
-        <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
-    </li>
-    <li >
-        <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
-    </li>
-</ul>
-
-<div class="tab-content">
-    <div class="tab-pane fade active in" id="c-info">
-
-        <p class="comment">
-            <h3>File</h3>
-        </p>
-        <p class="comment">
-            <code>src/lib/tvmaze.module.ts</code>
-        </p>
-
-
-
-
-        <div class="container-fluid module">
-            <div class="row">
-                <div class="col-sm-3">
-                    <h3>Declarations<a href="https://angular.io/api/core/NgModule#declarations" target="_blank"
-                            title="Official documentation about module declarations"><span class="icon ion-ios-information-circle-outline"></span></a></h3>
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <a href="../components/PosterComponent.html">PosterComponent</a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="../components/TvmazeComponent.html">TvmazeComponent</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h3>Exports<a href="https://angular.io/api/core/NgModule#exports" target="_blank" title="Official documentation about module exports"><span
-                                class="icon ion-ios-information-circle-outline"></a></h3>
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <a href="../components/PosterComponent.html">PosterComponent</a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="../components/TvmazeComponent.html">TvmazeComponent</a>
-                        </li>
-                    </ul>
+  
+<div class="container-fluid overview">
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="card text-center">
+                <div class="card-block">
+                    <h4 class="card-title"><span class="icon ion-ios-archive"></span></h4>
+                    <p class="card-text">
+                        <a href="./modules.html">1 Module</a>
+                    </p>
                 </div>
             </div>
         </div>
-
-        <section>
-    
-        <h3 id="methods">
-            Methods
-        </h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="forRoot"></a>
-                        <span class="name">
-                            <b>
-                                <span class="modifier">Static</span>
-                            forRoot
-                            </b>
-                            <a href="#forRoot"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                            <span class="modifier-icon icon ion-ios-reset"></span>
-                        <code>forRoot()</code>
-                    </td>
-                </tr>
-
-
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/lib/tvmaze.module.ts:19</a></div>
-                            </td>
-                        </tr>
-
-
-                <tr>
-                    <td class="col-md-4">
-
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://angular.io/api/core/ModuleWithProviders" target="_blank" >ModuleWithProviders</a></code>
-
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-</section>
-
-    </div>
-
-
-    <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { NgModule, ModuleWithProviders } from &#x27;@angular/core&#x27;;
-import { CommonModule } from &#x27;@angular/common&#x27;;
-import { TvmazeComponent } from &#x27;./tvmaze.component&#x27;;
-import { HttpClientModule } from &#x27;@angular/common/http&#x27;;
-import { PosterComponent } from &#x27;./poster/poster.component&#x27;;
-
-@NgModule({
-  imports: [
-    CommonModule,
-    HttpClientModule
-  ],
-  declarations: [TvmazeComponent, PosterComponent],
-  exports: [
-    TvmazeComponent,
-    PosterComponent
-  ]
-})
-export class TvmazeModule { 
-  static forRoot(): ModuleWithProviders {
-    return {
-      ngModule: TvmazeModule,
-      providers: [ ]
-    };
-  }
-}
-</code></pre>
+        <div class="col-sm-3">
+            <div class="card text-center">
+                <div class="card-block">
+                    <h4 class="card-title"><span class="icon ion-md-cog"></span></h4>
+                    <p class="card-text">2 Components</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card text-center">
+                <div class="card-block">
+                    <h4 class="card-title"><span class="icon ion-md-arrow-round-down"></span></h4>
+                    <p class="card-text">1 Injectable</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card text-center">
+                <div class="card-block">
+                    <h4 class="card-title"><span class="icon ion-md-information-circle-outline"></span></h4>
+                    <p class="card-text">2 Interfaces</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+<script src="js/libs/svg-pan-zoom.min.js"></script>
+<script src="js/svg-pan-zoom.controls.js"></script> 
+
 
 
 
@@ -300,36 +207,36 @@ export class TvmazeModule {
        </div>
 
        <script>
-            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
-            var COMPODOC_CURRENT_PAGE_CONTEXT = 'module';
-            var COMPODOC_CURRENT_PAGE_URL = 'TvmazeModule.html';
+            var COMPODOC_CURRENT_PAGE_DEPTH = 0;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'overview';
+            var COMPODOC_CURRENT_PAGE_URL = 'overview.html';
        </script>
 
-       <script src="../js/libs/custom-elements.min.js"></script>
-       <script src="../js/libs/lit-html.js"></script>
+       <script src="./js/libs/custom-elements.min.js"></script>
+       <script src="./js/libs/lit-html.js"></script>
        <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
-       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
-       <script src="../js/menu-wc.js" defer></script>
+       <script src="./js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="./js/menu-wc.js" defer></script>
 
-       <script src="../js/libs/bootstrap-native.js"></script>
+       <script src="./js/libs/bootstrap-native.js"></script>
 
-       <script src="../js/libs/es6-shim.min.js"></script>
-       <script src="../js/libs/EventDispatcher.js"></script>
-       <script src="../js/libs/promise.min.js"></script>
-       <script src="../js/libs/zepto.min.js"></script>
+       <script src="./js/libs/es6-shim.min.js"></script>
+       <script src="./js/libs/EventDispatcher.js"></script>
+       <script src="./js/libs/promise.min.js"></script>
+       <script src="./js/libs/zepto.min.js"></script>
 
-       <script src="../js/compodoc.js"></script>
+       <script src="./js/compodoc.js"></script>
 
-       <script src="../js/tabs.js"></script>
-       <script src="../js/menu.js"></script>
-       <script src="../js/libs/clipboard.min.js"></script>
-       <script src="../js/libs/prism.js"></script>
-       <script src="../js/sourceCode.js"></script>
-          <script src="../js/search/search.js"></script>
-          <script src="../js/search/lunr.min.js"></script>
-          <script src="../js/search/search-lunr.js"></script>
-          <script src="../js/search/search_index.js"></script>
-       <script src="../js/lazy-load-graphs.js"></script>
+       <script src="./js/tabs.js"></script>
+       <script src="./js/menu.js"></script>
+       <script src="./js/libs/clipboard.min.js"></script>
+       <script src="./js/libs/prism.js"></script>
+       <script src="./js/sourceCode.js"></script>
+          <script src="./js/search/search.js"></script>
+          <script src="./js/search/lunr.min.js"></script>
+          <script src="./js/search/search-lunr.js"></script>
+          <script src="./js/search/search_index.js"></script>
+       <script src="./js/lazy-load-graphs.js"></script>
 
 
     </body>

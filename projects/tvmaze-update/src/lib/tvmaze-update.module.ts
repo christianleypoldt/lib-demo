@@ -16,7 +16,16 @@ import { PosterComponent } from './poster/poster.component';
   ]
 })
 export class TvmazeUpdateModule { 
-  static forRoot(): ModuleWithProviders {
+
+  // static forRoot(): ModuleWithProviders {
+  //   return {
+  //     ngModule: TvmazeUpdateModule,
+  //     providers: [ ]
+  //   };
+  // }
+
+  // breaking-change
+  static configure(): ModuleWithProviders {
     return {
       ngModule: TvmazeUpdateModule,
       providers: [ ]

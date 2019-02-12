@@ -1,6 +1,6 @@
 {
   "name": "@leypoldt/lib-demo",
-  "version": "1.0.5",
+  "version": "1.1.5",
   "description": "Tester oppgradering av 3. party libraries",
   "author": "Christian Leypoldt",
   "repository": {
@@ -8,7 +8,8 @@
     "url": "https://github.com/leypoldt/lib-demo.git"
   },
   "scripts": {
-    "compodoc": "compodoc -p tsconfig.lib.json",
+    "compodoc_show": "compodoc --serve",
+    "compodoc_build": "compodoc -p tsconfig.lib.json",
     "compodoc_threshold": "compodoc -p tsconfig.lib.json --coverageTest"
   },
   "peerDependencies": {
@@ -16,6 +17,7 @@
     "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
   },
   "devDependencies": {
-    "@compodoc/compodoc": "^1.1.7"
+    "@compodoc/compodoc": "^1.1.7",
+    "underscore": "1.9.1"
   }
 }
